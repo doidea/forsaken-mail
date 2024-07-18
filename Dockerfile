@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:lts-alpine3.11
 MAINTAINER Hongcai Deng <admin@dhchouse.com>
 
 WORKDIR /forsaken-mail
