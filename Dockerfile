@@ -1,9 +1,9 @@
 FROM node:lts-alpine3.11
-MAINTAINER Hongcai Deng <admin@dhchouse.com>
+MAINTAINER Doidea modified from Hongcai Deng <admin@dhchouse.com>
 
 WORKDIR /forsaken-mail
 
-RUN wget https://github.com/denghongcai/forsaken-mail/archive/master.tar.gz -q -O /tmp/forsaken-mail-master.tar.gz \
+RUN wget https://github.com/doidea/forsaken-mail/archive/master.tar.gz -q -O /tmp/forsaken-mail-master.tar.gz \
     && tar zxf /tmp/forsaken-mail-master.tar.gz -C /tmp \
     && mv /tmp/forsaken-mail-master/* /forsaken-mail \
     && rm /tmp/forsaken-mail-master.tar.gz \
@@ -11,5 +11,5 @@ RUN wget https://github.com/denghongcai/forsaken-mail/archive/master.tar.gz -q -
     && npm cache clean --force
 
 EXPOSE 25
-EXPOSE 3000
+EXPOSE 13000
 CMD ["npm", "start"]
