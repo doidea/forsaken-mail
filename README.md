@@ -22,7 +22,7 @@ npm install && npm start
 if you want to run this inside a docker container
 ```
 docker build -t doidea/forsaken-mail .
-docker run --name forsaken-mail -d -p 25:25 -p 13000:13000 denghongcai/forsaken-mail
+docker run --name forsaken-mail -d -p 25:25 -p 13000:13000 doidea/forsaken-mail
 ```
 Open your browser and type in
 ```
