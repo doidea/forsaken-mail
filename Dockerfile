@@ -11,5 +11,5 @@ RUN wget https://github.com/doidea/forsaken-mail/archive/master.tar.gz -q -O /tm
     && npm cache clean --force
 
 EXPOSE 25
-EXPOSE 13000
+EXPOSE 3000
 CMD ["npm", "start"]
