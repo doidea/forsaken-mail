@@ -1,4 +1,4 @@
-FROM node:lts-alpine3.11
+FROM node:lts-alpine3.23
 MAINTAINER Doidea modified from Hongcai Deng <admin@dhchouse.com>
 
 WORKDIR /forsaken-mail
